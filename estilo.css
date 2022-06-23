@@ -108,6 +108,7 @@ input {
 input[type=text],
 input[type=email],
 input[type=tel],
+input[type=password],
 select,
 textarea {
 	width: 100%;

@@ -1,89 +1,97 @@
-*{
+* {
 	box-sizing: border-box
 }
 
-body{
+body {
 	font-family: Verdana;
 	margin: 0;
 }
 
-nav{
+nav {
 	text-align: center;
 	background-color: #333;
 	width: 100%;
 }
 
-nav a{
+nav a {
 	transition: 400ms;
 	text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
 	color: #1abc9c;
-	font-size:20px;
+	font-size: 20px;
 }
 
-nav ul{
-	margin:0;
-	padding-top:10px;
+nav ul {
+	margin: 0;
+	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-nav li{
+nav li {
 	list-style-type: none;
 	display: inline;
 	padding: 10px;
 }
 
-header{
+header {
 	padding: 60px;
 	text-align: center;
 	background-color: #1abc9c;
 	color: white;
 }
 
-p a{
+p a {
 	text-decoration: none;
 	color: black;
 }
 
-.container{
+.container {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.esquerda{
+.esquerda {
 	flex: 30%;
 	background-color: #f1f1f1;
 	padding: 20px;
 }
-.conteudo{
+
+.conteudo {
 	flex: 70%;
 	background-color: white;
 	padding: 20px;
 }
 
-.imgFake{
+.imgFake {
 	background-color: #aaa;
 	width: 100%;
 	padding: 20px;
 }
 
-.footer{
+.footer {
 	padding: 20px;
 	background-color: #333;
 	text-align: center;
 	color: white;
 }
 
-@media screen and (max-width: 700px){
-	.container, nav{
+@media screen and (max-width: 700px) {
+
+	.container,
+	nav {
 		flex-direction: column;
 	}
-	header{
+
+	header {
 		background-color: green;
 	}
-	.label, .input, input[type=submit], input[type=reset]{
+
+	.label,
+	.input,
+	input[type=submit],
+	input[type=reset] {
 		width: 100%;
 		margin-top: 0;
 	}
@@ -91,18 +99,24 @@ p a{
 
 /* css do form */
 /* para todos os inputs */
-input{
+input {
 	color: purple;
 }
+
 /* especifico para alguns inputs*/
-input[type=text], input[type=email], input[type=tel], select, textarea{
+input[type=text],
+input[type=email],
+input[type=tel],
+select,
+textarea {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	resize: vertical;
 }
-input[type=submit]{
+
+input[type=submit] {
 	background-color: #4caf50;
 	float: right;
 	color: white;
@@ -112,10 +126,12 @@ input[type=submit]{
 	padding: 12px 20px;
 	margin: 5px;
 }
-input[type=submit]:hover{
+
+input[type=submit]:hover {
 	background-color: #45a049;
 }
-input[type=reset]{
+
+input[type=reset] {
 	background-color: #af4c4c;
 	float: right;
 	color: white;
@@ -125,21 +141,24 @@ input[type=reset]{
 	padding: 12px 20px;
 	margin: 5px;
 }
-input[type=reset]:hover{
+
+input[type=reset]:hover {
 	background-color: #eb6767;
 }
-.row:after{
-	content:"";
+
+.row:after {
+	content: "";
 	display: table;
 	clear: both;
 }
-.label{
+
+.label {
 	float: left;
 	width: 25%;
 	margin-top: 6px;
 }
 
-.input{
+.input {
 	float: left;
 	width: 75%;
 	margin-top: 6px;

@@ -43,7 +43,7 @@ function validar() {
         alert("CNPJ inválido!");
         formUser.cnpj.focus();
         return false;
-    } 
+    }
 
     if (cpf == "") {
         if (cnpj == "" || cnpj.length < 18 && cpf != "") {
@@ -55,7 +55,7 @@ function validar() {
         alert("CPF inválido!");
         formUser.cpf.focus();
         return false;
-    } 
+    }
 
     if (senha == "" || senha.length <= 6) {
         alert("Senha deve ter no mínimo 6 digitos!");
@@ -65,3 +65,13 @@ function validar() {
 
 }
 
+function mascaraCPF(i) {
+    const v = i.value;
+    if (isNaN(v[v.length - 1])) {
+        i.value = v.substring(0, v.length - 1);
+        return;
+    }
+    i.setAttribute("maxlength", "14");
+    if (v.length == 3 || v.length == 7) i.value += ".";
+    if (v.length == 11) i.value += "-";
+}

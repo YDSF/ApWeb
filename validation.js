@@ -57,12 +57,11 @@ function validar() {
         return false;
     } 
 
-
     if (senha == "" || senha.length <= 6) {
         alert("Senha deve ter no mínimo 6 digitos!");
         formUser.senha.focus();
         return false;
     }
 
-
 }
+

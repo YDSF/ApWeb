@@ -19,7 +19,7 @@ nav a {
 }
 
 nav a:hover {
-	color: #1abc9c;
+	color: #19e9de;
 	font-size: 20px;
 }
 
@@ -38,7 +38,7 @@ nav li {
 header {
 	padding: 60px;
 	text-align: center;
-	background-color: #1abc9c;
+	background-color: rgb(67, 204, 204);
 	color: white;
 }
 
@@ -86,7 +86,7 @@ p a {
 	}
 
 	header {
-		background-color: green;
+		background-color: rgb(60, 245, 245);
 	}
 
 	.label,
@@ -119,7 +119,7 @@ textarea {
 }
 
 input[type=submit] {
-	background-color: #4caf50;
+	background-color: #2daeb3;
 	float: right;
 	color: white;
 	border-radius: 5px;
@@ -130,7 +130,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-	background-color: #45a049;
+	background-color: #169094;
 }
 
 input[type=reset] {

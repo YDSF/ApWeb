@@ -139,7 +139,7 @@
 						<label>CNPJ:</label>
 					</div>
 					<div class="input">
-						<input type="text" id="cnpj" name="cnpj" oninput="mascaraCNPJ(this)"/>
+						<input type="text" id="cnpj" name="cnpj" oninput="mascaraCNPJ(this)" />
 					</div>
 				</div>
 
@@ -149,6 +149,15 @@
 					</div>
 					<div class="input">
 						<input type="password" id="senha" name="senha" />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="label">
+						<label>Confirme a Senha:</label>
+					</div>
+					<div class="input">
+						<input type="password" id="Confirmsenha" name="Confirmsenha" />
 					</div>
 				</div>
 
@@ -175,6 +184,9 @@
 			<br />
 			&copy; Todos os direitos reservados. Aprendiz Yasmin.
 		</div>
+		<script>
+			document.getElementById("imgUser").addEventListener("change", lerImg, false);
+		</script>
 </body>
 
 </html>
